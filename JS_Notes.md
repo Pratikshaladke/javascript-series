@@ -187,17 +187,18 @@ To create strings by doing substitution of placeholders.
 2.  String methods does not change original string it will log new strings.
 3.  Strings are immutable.
 
-String Methods. 
+String Methods.
+
 1.  `str.toUpperCase()` // convert string into upper case.
-   
+
 2.  `str.toLowerCase()` // convert string into lower case.
-   
+
 3.  `str.trim()` // removes whitespace.
-   
+
 4.  `str.slice(start, end?)` //return part of string, end value should be optional. `(start, endindex - 1)`.
-   
+
 5.  `str1.concat(str2)` // join str2 with str1, it will return new string, we also concat multiple strings.
-   
+
 6.  `str.replace(searchValue, newValue)` // used for searching value in string, replace newValue with searchValue. It will only replace first seachvalu , if duplicate character are available
 
             `ex -
@@ -206,3 +207,112 @@ String Methods.
             `.
 
 7.  `str.chartAt(idx)` //search character at particular .
+
+### 4th Video
+
+### ARRAYS
+
+Collection of items, Arrays are mutable.
+
+### Array Indices(Index)
+
+arr[0], arr[1], arr[2],....
+
+`Looping over an array`
+
+`Arrays methods`
+
+1. push() : Add element at the end of array. We can push multiple elemnt at a time.
+
+2. pop() : Delete from end and return new array. It will only delete one element at time. It will change original array.
+
+3. toString() : It will convert array to string. It will Not change in original array.
+
+4. concat() : It will join multiple arrays and returns result. It will return new arrays.
+
+5. unshift() : Add element at the start of an array. We can add multiple element in the array.
+
+6. shift() : Delete element from start and return.It will modify the original array.
+
+7. slice() : Return piece of the array. it will not change original arrray.
+   `slice(startIdx,endIdx)` endIndex - 1
+
+8. splice() : change original array(add,remove,replace). It will change original array
+   `splice(startidx,delcount,newEl1...)`
+
+### 5th Video
+
+### FUNCTION
+
+Function is a block of code that performs a specific task, can be invoked(call) whenever needed.
+
+Function parameters are like local variales of function having function scope
+
+`Function Defination`
+
+function functionName(){
+//do some work
+}
+
+function functionName(param1,param2,...){
+//do some work
+}
+
+`Function Call/Invoked`
+
+functionName();
+
+### Arrow Function
+
+Compact way of writing the function
+
+`Ex. const printHello = () => console.log("hello)`
+
+const functionNName = (param1, param2,..){
+//do some work
+}
+
+const sum = (a, b) =>{
+return a + b;
+}
+
+`forEach Loop in Arrays`
+arr.forEach(callBackFunction)
+
+CallbackFunction :Here, it is a function to execute for each element in the array.
+
+`CallbackFunction`
+A callback is a function passed an an argument to another function.
+
+arr.forEach((val) => {
+console.log(val);
+})
+
+### Higher Order Function/Methods
+
+It is a function which take function as a parameter or return another function.
+
+### Some More Array Methods
+
+`Map`
+1. Creates a new array with the results of some operation. 
+2. the value its callback returns are used to form new array.
+3. It will return new array.
+4. Basically map is used to return new value, based on the condition. 
+   
+arr.map(callbackFnx( value, index, array))
+
+`Ex. `
+let newArr = arr.map((val) => {
+   return value*2;
+})
+
+`Filter`
+1. Creates a new array of elements that give true for a condition/filter.
+2. based on condition it will filter the values.
+3. It will return new array.
+
+
+`Reduce`
+1. Perform some operations & reduces the array to a single value. 
+2. It returns that single value.
